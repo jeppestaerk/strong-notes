@@ -5,6 +5,10 @@
          <lastmod>2024-09-14</lastmod>
     </url>
     <url>
+         <loc>https://notes.staerk.cloud/kubernetes/</loc>
+         <lastmod>2024-09-14</lastmod>
+    </url>
+    <url>
          <loc>https://notes.staerk.cloud/kubernetes/applications/authentik/</loc>
          <lastmod>2024-09-14</lastmod>
     </url>
@@ -38,10 +42,6 @@
     </url>
     <url>
          <loc>https://notes.staerk.cloud/kubernetes/applications/traefik/</loc>
-         <lastmod>2024-09-14</lastmod>
-    </url>
-    <url>
-         <loc>https://notes.staerk.cloud/kubernetes/cluster/k3s/</loc>
          <lastmod>2024-09-14</lastmod>
     </url>
     <url>
