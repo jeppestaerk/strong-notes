@@ -6,7 +6,15 @@ repo_url: "https://github.com/jeppestaerk/strong-notes"
 copyright: "Copyright &copy; Jeppe Stærk"
 plugins:
   - search:
-  - git-authors
+  - git-committers:
+      repository: jeppestaerk/strong-notes
+      branch: main
+      token: !ENV ["GH_TOKEN"]
+      enabled: !ENV [CI, false]
+  - git-revision-date-localized:
+      enable_creation_date: true
+      fallback_to_build_date: true
+      enabled: !ENV [CI, false]
 theme:
   name: material
   language: en
@@ -35,11 +43,8 @@ theme:
         icon: material/brightness-4
         name: Switch to system preference
 markdown_extensions:
-  # https://squidfunk.github.io/mkdocs-material/reference/admonitions/
   - admonition
   - pymdownx.details
-  - pymdownx.superfences
-  # https://squidfunk.github.io/mkdocs-material/reference/code-blocks/
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
@@ -47,24 +52,24 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
-  # https://squidfunk.github.io/mkdocs-material/reference/diagrams/
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
           class: mermaid
-          format:
-            !!python/name:pymdownx.superfences.fence_code_format # https://squidfunk.github.io/mkdocs-material/reference/formatting/
-
-
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.critic
   - pymdownx.caret
   - pymdownx.keys
   - pymdownx.mark
   - pymdownx.tilde
-  # https://squidfunk.github.io/mkdocs-material/reference/lists/
   - def_list
+  - attr_list
+  - md_in_html
   - pymdownx.tasklist:
       custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
 extra:
   generator: false
   status:
