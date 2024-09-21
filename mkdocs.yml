@@ -10,11 +10,11 @@ plugins:
       repository: jeppestaerk/strong-notes
       branch: main
       token: !ENV ["GH_TOKEN"]
-      enabled: !ENV [CI, false]
+      # enabled: !ENV [CI, false]
   - git-revision-date-localized:
       enable_creation_date: true
       fallback_to_build_date: true
-      enabled: !ENV [CI, false]
+      # enabled: !ENV [CI, false]
 theme:
   name: material
   language: en

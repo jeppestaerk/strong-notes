@@ -1,9 +1,5 @@
 ## Requirements
 
-!!! summary "Preperations"
-
-    * [x] A running [PostgreSql](/kubernetes/applications/postgresql/) with a dedicated user, password and database for MatterMost
-
 ```yaml title="mattermost-values.yaml" linenums="1"
 persistence:
   data:

@@ -2,10 +2,10 @@
 
 <div class="grid cards" markdown>
 
--   **Kubernetes**
+- **Kubernetes**
 
-    ---
+  ***
 
-    [:octicons-arrow-right-24: Getting started](/kubernetes/)
+  [:octicons-arrow-right-24: Getting started](kubernetes/index.md)
 
 </div>
