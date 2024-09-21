@@ -1266,7 +1266,11 @@
 </span></code></pre></div>
 <h3 id="step-6-create-a-docker-registry-secret-in-kubernetes">Step 6: Create a Docker Registry Secret in Kubernetes</h3>
 <p>Create a secret to pull the image from the private registry:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>kubectl<span class="w"> </span>--namespace<span class="w"> </span>hello-world<span class="w"> </span>create<span class="w"> </span>secret<span class="w"> </span>docker-registry<span class="w"> </span>regcred<span class="w"> </span>--docker-server<span class="o">=</span>registry.valhal.cloud<span class="w"> </span>--docker-username<span class="o">=</span>&lt;username&gt;<span class="w"> </span>--docker-password<span class="o">=</span>&lt;password&gt;
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>kubectl<span class="w"> </span>--namespace<span class="w"> </span>hello-world<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="w">  </span>create<span class="w"> </span>secret<span class="w"> </span>docker-registry<span class="w"> </span>regcred<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="w">  </span>--docker-server<span class="o">=</span>registry.valhal.cloud<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="w">  </span>--docker-username<span class="o">=</span>&lt;username&gt;<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="w">  </span>--docker-password<span class="o">=</span>&lt;password&gt;
 </span></code></pre></div>
 <p>Replace <username> and <password> with your actual Docker registry credentials.</p>
 <h3 id="step-7-create-the-kubernetes-application">Step 7: Create the Kubernetes Application</h3>
