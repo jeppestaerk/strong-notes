@@ -24,7 +24,7 @@
     
     
       
-        <title>Hello world - Strong Notes</title>
+        <title>"Deploying a Dockerfile to Kubernetes: A Step-by-Step Guide" - Strong Notes</title>
       
     
     
@@ -75,6 +75,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#deploying-a-dockerfile-to-kubernetes-a-step-by-step-guide" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -105,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Hello world
+              "Deploying a Dockerfile to Kubernetes: A Step-by-Step Guide"
             
           </span>
         </div>
@@ -769,16 +774,162 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    "Deploying a Dockerfile to Kubernetes: A Step-by-Step Guide"
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
-    Hello world
+    "Deploying a Dockerfile to Kubernetes: A Step-by-Step Guide"
   </span>
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#guide" class="md-nav__link">
+    <span class="md-ellipsis">
+      Guide
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Guide">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-create-the-dockerfile" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 1: Create the Dockerfile
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-build-the-docker-image" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 2: Build the Docker Image
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-tag-and-push-the-image-to-the-registry" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 3: Tag and Push the Image to the Registry
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4-test-the-image-locally" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 4: Test the Image Locally
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-5-create-a-kubernetes-namespace" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 5: Create a Kubernetes Namespace
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-6-create-a-docker-registry-secret-in-kubernetes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 6: Create a Docker Registry Secret in Kubernetes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-7-deploy-the-application-to-kubernetes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 7: Deploy the Application to Kubernetes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-8-apply-the-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 8: Apply the configuration:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-9-access-the-application" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 9: Access the Application
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -910,6 +1061,130 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#guide" class="md-nav__link">
+    <span class="md-ellipsis">
+      Guide
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Guide">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-create-the-dockerfile" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 1: Create the Dockerfile
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-build-the-docker-image" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 2: Build the Docker Image
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-tag-and-push-the-image-to-the-registry" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 3: Tag and Push the Image to the Registry
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4-test-the-image-locally" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 4: Test the Image Locally
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-5-create-a-kubernetes-namespace" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 5: Create a Kubernetes Namespace
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-6-create-a-docker-registry-secret-in-kubernetes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 6: Create a Docker Registry Secret in Kubernetes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-7-deploy-the-application-to-kubernetes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 7: Deploy the Application to Kubernetes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-8-apply-the-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 8: Apply the configuration:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-9-access-the-application" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 9: Access the Application
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -927,27 +1202,54 @@
   
 
 
-  <h1>Hello world</h1>
-
+<h1 id="deploying-a-dockerfile-to-kubernetes-a-step-by-step-guide">"Deploying a Dockerfile to Kubernetes: A Step-by-Step Guide"</h1>
+<h2 id="introduction">Introduction</h2>
+<p>Briefly introduce the purpose of the blog post: "In this tutorial, we'll walk you through the process of building a Docker image from a Dockerfile and deploying it to a Kubernetes cluster."</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<ul>
+<li>Docker installed on your machine</li>
+<li>Kubernetes cluster set up and kubectl configured</li>
+<li>Access to a Docker registry (public or private)</li>
+</ul>
+<h2 id="guide">Guide</h2>
+<h3 id="step-1-create-the-dockerfile">Step 1: Create the Dockerfile</h3>
+<p>Contents of the Dockerfile:</p>
 <div class="language-dockerfile highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Dockerfile</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
 <span class="normal"><a href="#__codelineno-0-2">2</a></span>
 <span class="normal"><a href="#__codelineno-0-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="k">FROM</span><span class="w"> </span><span class="s">traefik/whoami:latest</span>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="k">ENTRYPOINT</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;/whoami&quot;</span><span class="p">]</span>
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="k">EXPOSE</span><span class="w"> </span><span class="s">80</span>
 </span></code></pre></div></td></tr></table></div>
+<p>This Dockerfile uses the traefik/whoami image and sets the entry point to /whoami.</p>
+<h3 id="step-2-build-the-docker-image">Step 2: Build the Docker Image</h3>
+<p>Run the following command to build the Docker image:</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>docker<span class="w"> </span>build<span class="w"> </span>.<span class="w"> </span>-t<span class="w"> </span>hello-world/whoami:latest
 </span></code></pre></div>
+<p>Explanation: This command builds the image from the Dockerfile and tags it as hello-world/whoami:latest.</p>
+<h3 id="step-3-tag-and-push-the-image-to-the-registry">Step 3: Tag and Push the Image to the Registry</h3>
+<p>Tag the image for your Docker registry:</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>docker<span class="w"> </span>tag<span class="w"> </span>hello-world/whoami:latest<span class="w"> </span>registry.valhal.cloud/hello-world/whoami:latest
 </span></code></pre></div>
+<p>Push the image to the registry:</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>docker<span class="w"> </span>push<span class="w"> </span>registry.valhal.cloud/hello-world/whoami:latest
 </span></code></pre></div>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c1"># test image local on: http://localhost:8080</span>
-</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>docker<span class="w"> </span>run<span class="w"> </span>--name<span class="w"> </span>whoami<span class="w"> </span>-p<span class="w"> </span><span class="m">8080</span>:80<span class="w"> </span>registry.valhal.cloud/hello-world/whoami:latest
+<p>Explanation: Make sure you replace registry.valhal.cloud with your Docker registry URL.</p>
+<h3 id="step-4-test-the-image-locally">Step 4: Test the Image Locally</h3>
+<p>You can test the image locally by running:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>docker<span class="w"> </span>run<span class="w"> </span>--name<span class="w"> </span>whoami<span class="w"> </span>-p<span class="w"> </span><span class="m">8080</span>:80<span class="w"> </span>registry.valhal.cloud/hello-world/whoami:latest
 </span></code></pre></div>
+<p>Visit <a href="http://localhost:8080">http://localhost:8080</a> to see your application running.</p>
+<h3 id="step-5-create-a-kubernetes-namespace">Step 5: Create a Kubernetes Namespace</h3>
+<p>Create a dedicated namespace for the deployment:</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>kubectl<span class="w"> </span>create<span class="w"> </span>namespace<span class="w"> </span>hello-world
 </span></code></pre></div>
+<h3 id="step-6-create-a-docker-registry-secret-in-kubernetes">Step 6: Create a Docker Registry Secret in Kubernetes</h3>
+<p>Create a secret to pull the image from the private registry:</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>kubectl<span class="w"> </span>--namespace<span class="w"> </span>hello-world<span class="w"> </span>create<span class="w"> </span>secret<span class="w"> </span>docker-registry<span class="w"> </span>regcred<span class="w"> </span>--docker-server<span class="o">=</span>registry.valhal.cloud<span class="w"> </span>--docker-username<span class="o">=</span>&lt;username&gt;<span class="w"> </span>--docker-password<span class="o">=</span>&lt;password&gt;
 </span></code></pre></div>
+<p>Replace <username> and <password> with your actual Docker registry credentials.</p>
+<h3 id="step-7-deploy-the-application-to-kubernetes">Step 7: Deploy the Application to Kubernetes</h3>
+<p>Here's the Kubernetes YAML file (hello-world.yaml) for deploying the application:</p>
 <div class="language-yaml highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">hello-world.yaml</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-7-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-7-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-7-3"> 3</a></span>
@@ -1056,11 +1358,11 @@
 </span><span id="__span-7-53"><a id="__codelineno-7-53" name="__codelineno-7-53"></a><span class="w">                </span><span class="nt">port</span><span class="p">:</span>
 </span><span id="__span-7-54"><a id="__codelineno-7-54" name="__codelineno-7-54"></a><span class="w">                  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">web</span>
 </span></code></pre></div></td></tr></table></div>
+<h3 id="step-8-apply-the-configuration">Step 8: Apply the configuration:</h3>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>kubectl<span class="w"> </span>apply<span class="w"> </span>-f<span class="w"> </span>hello-world.yaml
 </span></code></pre></div>
-<blockquote>
+<h3 id="step-9-access-the-application">Step 9: Access the Application</h3>
 <p><a href="https://whoami.valhal.dev">https://whoami.valhal.dev</a></p>
-</blockquote>
 
 
 
