@@ -1249,7 +1249,8 @@
 <p>Explanation: This command builds the image from the Dockerfile and tags it as hello-world/whoami:latest.</p>
 <h3 id="step-3-tag-and-push-the-image-to-the-registry">Step 3: Tag and Push the Image to the Registry</h3>
 <p>Tag the image for your Docker registry:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>docker<span class="w"> </span>tag<span class="w"> </span>hello-world/whoami:latest<span class="w"> </span>registry.valhal.cloud/hello-world/whoami:latest
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>docker<span class="w"> </span>tag<span class="w"> </span>hello-world/whoami:latest<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">  </span>registry.valhal.cloud/hello-world/whoami:latest
 </span></code></pre></div>
 <p>Push the image to the registry:</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>docker<span class="w"> </span>push<span class="w"> </span>registry.valhal.cloud/hello-world/whoami:latest
@@ -1257,7 +1258,8 @@
 <p>Explanation: Make sure you replace registry.valhal.cloud with your Docker registry URL.</p>
 <h3 id="step-4-test-the-image-locally">Step 4: Test the Image Locally</h3>
 <p>You can test the image locally by running:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>docker<span class="w"> </span>run<span class="w"> </span>--name<span class="w"> </span>whoami<span class="w"> </span>-p<span class="w"> </span><span class="m">8080</span>:80<span class="w"> </span>registry.valhal.cloud/hello-world/whoami:latest
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>docker<span class="w"> </span>run<span class="w"> </span>--name<span class="w"> </span>whoami<span class="w"> </span>-p<span class="w"> </span><span class="m">8080</span>:80<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">  </span>registry.valhal.cloud/hello-world/whoami:latest
 </span></code></pre></div>
 <p>Visit <a href="http://localhost:8080">http://localhost:8080</a> to see your application running.</p>
 <h3 id="step-5-create-a-kubernetes-namespace">Step 5: Create a Kubernetes Namespace</h3>
