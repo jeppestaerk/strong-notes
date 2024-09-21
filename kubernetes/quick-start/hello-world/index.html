@@ -896,18 +896,18 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#step-7-deploy-the-application-to-kubernetes" class="md-nav__link">
+  <a href="#step-7-create-the-kubernetes-application" class="md-nav__link">
     <span class="md-ellipsis">
-      Step 7: Deploy the Application to Kubernetes
+      Step 7: Create the Kubernetes Application
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#step-8-apply-the-configuration" class="md-nav__link">
+  <a href="#step-8-deploy-the-application" class="md-nav__link">
     <span class="md-ellipsis">
-      Step 8: Apply the configuration:
+      Step 8: Deploy the application
     </span>
   </a>
   
@@ -1153,18 +1153,18 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#step-7-deploy-the-application-to-kubernetes" class="md-nav__link">
+  <a href="#step-7-create-the-kubernetes-application" class="md-nav__link">
     <span class="md-ellipsis">
-      Step 7: Deploy the Application to Kubernetes
+      Step 7: Create the Kubernetes Application
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#step-8-apply-the-configuration" class="md-nav__link">
+  <a href="#step-8-deploy-the-application" class="md-nav__link">
     <span class="md-ellipsis">
-      Step 8: Apply the configuration:
+      Step 8: Deploy the application
     </span>
   </a>
   
@@ -1248,9 +1248,9 @@
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>kubectl<span class="w"> </span>--namespace<span class="w"> </span>hello-world<span class="w"> </span>create<span class="w"> </span>secret<span class="w"> </span>docker-registry<span class="w"> </span>regcred<span class="w"> </span>--docker-server<span class="o">=</span>registry.valhal.cloud<span class="w"> </span>--docker-username<span class="o">=</span>&lt;username&gt;<span class="w"> </span>--docker-password<span class="o">=</span>&lt;password&gt;
 </span></code></pre></div>
 <p>Replace <username> and <password> with your actual Docker registry credentials.</p>
-<h3 id="step-7-deploy-the-application-to-kubernetes">Step 7: Deploy the Application to Kubernetes</h3>
-<p>Here's the Kubernetes YAML file (hello-world.yaml) for deploying the application:</p>
-<div class="language-yaml highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">hello-world.yaml</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-7-1"> 1</a></span>
+<h3 id="step-7-create-the-kubernetes-application">Step 7: Create the Kubernetes Application</h3>
+<p>Here's the Kubernetes YAML file (whoami-hello-world.yaml) for deploying the application:</p>
+<div class="language-yaml highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">whoami-hello-world.yaml</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-7-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-7-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-7-3"> 3</a></span>
 <span class="normal"><a href="#__codelineno-7-4"> 4</a></span>
@@ -1358,7 +1358,7 @@
 </span><span id="__span-7-53"><a id="__codelineno-7-53" name="__codelineno-7-53"></a><span class="w">                </span><span class="nt">port</span><span class="p">:</span>
 </span><span id="__span-7-54"><a id="__codelineno-7-54" name="__codelineno-7-54"></a><span class="w">                  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">web</span>
 </span></code></pre></div></td></tr></table></div>
-<h3 id="step-8-apply-the-configuration">Step 8: Apply the configuration:</h3>
+<h3 id="step-8-deploy-the-application">Step 8: Deploy the application</h3>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>kubectl<span class="w"> </span>apply<span class="w"> </span>-f<span class="w"> </span>hello-world.yaml
 </span></code></pre></div>
 <h3 id="step-9-access-the-application">Step 9: Access the Application</h3>
